@@ -1,43 +1,143 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>2주차 - HTML기초</title>
+
+        <title>training</title>
         <meta charset="utf-8, euc-kr"/>
         <!-- utf-8, euc-kr -->
         <meta name="author" content="백재원">
         <meta name="keywords" content="계원예대, 디미디, 콘텐츠프로그래밍">
+
     </head>
+
     <body>
+
         <a href="index.html">HOME</a>
+
+        <!-- h1~h6 제목, 순번x, 깊이(depth)o -->
+        <!-- <hr /> 의미가 크게 바뀔 때 사용함. -->
+        <h1>대한민국 최고의 김☆애★용 사이트</h1>
+        <hr />
+        <h2>배당 200% 최고 확률///츄르 경품 추첨 지금 바로 </h2> <a href="https://www.youtube.com/watch?v=FDRqVYomTW4" target="_blank">GO</a>
+
+        <!-- anchor 닻 특정 지점으로 이동하는 기점 -->
+        <!-- <p> 문단을 구분-한가지 주제 이어지는 서술내용. 내용 강조 용도 </p> -->
+        <p> <a href = "https://www.youtube.com/channel/UCmLiSrat4HW2k07ahKEJo4w" target="_blank"> 크림이들 </a> </p>
+        <!-- _self, _blank -->
+        
+        <!-- 이미지 표시하는 태그 src="주소 -->
+        <img src="http://img.hani.co.kr/imgdb/resize/2018/0313/00500561_20180313.JPG" />
+
+        <!-- 줄내림시 <br /> 사용 (끝단 맞추기로 사용하면 기기에 따라 다르게 보이므로 부적합. -->
+        <br />캣닢클럽 10당 5츄르 지금바로gogogo<br />접속바로가기
+        
+        <!-- unordered list 비 순차적 목록-동그란 글머리 기호 생성 -->
+        <ul>
+            <li>설탕 100g</li>
+            <li>소금 1000g</li>
+            <li>물 100000ml</li>
+        </ul>
+        
+        <!-- ordered list 순차적 목록-순차적 번호 생성 -->
+        <ol>
+            <li>라면 먹기</li>
+            <li>설거지 안하기</li>
+            <li>TV 보기</li>
+        </ol>
+
+        <!-- difinition list 정의형 목록 *term/description -->
+        <dl>
+            <dt>unodered list 비 순차적 목록</dt>
+            <dd>
+                비 순차적 목록은 순서가 없고 위치가 바뀌어도 의미가 바뀌지 않는 목록을 의미합니다.
+            </dd>
+            
+            <dt>definition list 정의형 목록</dt>
+            <dd>
+                정의형 목록은 어떤 용어나 단어 등을 정의(의미를 명확히)할 때 사용합니다.
+            </dd>
+        </dl>
+        
+        <!-- strong, em <> b, i (의미변화가 중요한 HTML에서는 strong이나 em이 더 중요 -->
+        <strong>강한 강조</strong>
+        <em>강조</em>
+        <b>볼드체</b>
+        <i>이텔릭체</i>
+        
+        <!-- ins 첨부, del 삭제 <> u, strike -->
+        <ins>첨부내용</ins>
+        <del>삭제내용</del>
+        <u>밑줄</u>
+        <strike>가운데줄</strike>
+
+        <!-- sup 윗첨자, sub 아랫첨자 -->
+        2<sup>2</sup> : 2의 2제곱
+        H<sub>2</sub>0 : 물의 화학식
+
+        <img src="images/jsgface.jpg" weight="100px"/>
+        <img src="images/jsgface.jpg" height="100px"/>
+
+        <!-- table, tr, td -->
+        <!-- style 표 스타일 지정 -->
+        <style>
+            table, tr, td {border:solid 1px rgb(51, 212, 30);}
+        </style>
+        <!-- summary 요약, caption 표제 -->
+        <table summary="표 설명">
+            <caption>[표1] 표 제목</caption>
+            <!-- thead, tbody, tfoot -->
+            <!-- scope 초점, 망원경 -->
+            <thead>
+            <tr>
+                <th scope="col">제목1</th>
+                <th scope="col">제목2</th>
+                <th scope="col">제목3</th>
+                <th scope="col">제목4</th>
+                <th scope="col">제목5</th>
+            </tr>
+            </thead> 
+            <!-- tr 한줄, td 한칸 -->
+            <tbody>
+            <tr>
+                <!-- colspan 가로(열)늘이기, rowspan 세로(행)늘이기 -->
+                <td colspan="2">1</td>
+                <td rowspan="2">2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <!-- div, span 분할 -->
+        <!-- 의미없이 쓰기 좋은 태그들 -->
+        <!-- 블록형 -->
+        <div>아브라카다브라아브라카다브라아브라카다브라아브라카다브라아브라카다브라아브라카다브라아브라카다브라아브라카다브라아브라카다브라</div>
+        <!-- 인라인형 -->
+        <span>아브라카다브라아브라카다브라아브라카다브라아브라카다브라아브라카다브라아브라카다브라아브라카다브라아브라카다브라아브라카다브라</span>
+
+        <style>
+            table, tr, td {border:solid 1px rgb(51, 212, 30);}
+        </style>
+        <table>
+            <tr>
+                <td colspan="3">up</td>
+                <td rowspan="2">right</td>
+            </tr>
+            <tr>
+                <td rowspan="3">left</td>
+                <td colspan="2">center</td>
+            </tr>
+            <tr>
+                <td colspan="3">down</td>
+            </tr>
+        </table>
+
     </body>
 </html>
-<!-- 여기까지 기본형태(이거주석임) -->
-
-<!-- h1~h6 제목, 순번x, 깊이(depth)o -->
-<!-- <hr /> 의미가 크게 바뀔 때 사용함. -->
-<h1>대한민국 최고의 김☆애★용 사이트</h1>
-<hr />
-<h2>배당 200% 최고 확률///츄르 경품 추첨 지금 바로 </h2> <a href="https://www.youtube.com/watch?v=FDRqVYomTW4" target="_blank">GO</a>
-<!-- anchor 닻 특정 지점으로 이동하는 기점 -->
-<!-- <p> 문단을 구분-한가지 주제 이어지는 서술내용. 내용 강조 용도 </p> -->
-<p> <a href = "https://www.youtube.com/channel/UCmLiSrat4HW2k07ahKEJo4w" target="_blank"> 크림이들 </a> </p>
-<!-- _self, _blank -->
-
-<!-- 이미지 표시하는 태그 src="주소 -->
-<img src="http://img.hani.co.kr/imgdb/resize/2018/0313/00500561_20180313.JPG" />
-<!-- 줄내림시 <br /> 사용 (끝단 맞추기로 사용하면 기기에 따라 다르게 보이므로 부적합. -->
-<br />캣닢클럽 10당 5츄르 지금바로gogogo<br />접속바로가기
-
-<!-- unordered list 비 순차적 목록-동그란 글머리 기호 생성 -->
-<ul>
-    <li>설탕 100g</li>
-    <li>소금 1000g</li>
-    <li>물 100000ml</li>
-</ul>
-
-<!-- ordered list 순차적 목록-순차적 번호 생성 -->
-<ol>
-    <li>라면 먹기</li>
-    <li>설거지 안하기</li>
-    <li>TV 보기</li>
-</ol>
+<!-- 여기까지 기본형태 -->
