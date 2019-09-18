@@ -138,6 +138,42 @@
             </tr>
         </table>
 
+        <!-- form 양식지 -->
+        <form>
+            <!-- text, password, radio-택1, checkbox-복수선택 -->
+            <input type="text" placeholder="아이디를 입력해주세요" value="" />
+            <input type="password" placeholder="암호를 입력해주세요" value="" />
+            <input type="radio" name="bt1" value="1" />
+            <input type="radio" name="bt1" value="2" />
+            <input type="radio" name="bt1" value="3" />
+            <!-- 같은 정보의 라디오 버튼의 이름은 같아야함 -->
+            <input type="radio" name="bt2" value="1" />
+            <input type="radio" name="bt2" value="2" />
+            <input type="radio" name="bt2" value="3" />
+            <input type="checkbox" value="1" />
+            <input type="checkbox" value="2" />
+            <input type="checkbox" value="3" />
+
+            <select>
+                <option>사이트</option>
+                <option>뽀빠이클럽</option>
+                <option>네이년</option>
+                <option>가글</option>
+            </select>
+
+            <br />
+            <!-- cols 열갯수(글자수), rows 행갯수(줄수) -->
+            <textarea cols="20" rows="3">
+                
+            </textarea>
+            <br />
+            <!-- button 버튼 -->
+            <input type="button" value="버튼이름" />
+            <input type="button" oneclick="alert('테스트완료')" value="테스트 버튼" />
+
+            <!-- submit 제출 버튼 -->
+            <input type="submit" value="제출" />
+        </form>
     </body>
 </html>
 <!-- 여기까지 기본형태 -->
