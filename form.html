@@ -7,23 +7,22 @@
         </head>
 
         <body>
-
+            <div style="text-align:center;">
             <a href="index.html">HOME</a>
 
             <h1>뽀빠이클럽 회원가입</h1>
             <hr />
+            </br>
             <img src="http://blogfiles.naver.net/20110831_103/truepartners_1314765625967VPp1K_JPEG/1.jpg" />
+            </br>
             <p>뽀빠이클럽에 오신 것을 환영합니다</p>
             <br />
             <p>아래 절차에 따라 회원가입을 완료해주세요^^</p>
             <br />
-        <form>
-            이름(실명).닉넴.중복확인.아이디.중복확인.비번.비번확인.주민번호.계좌번호.전화번호.이벤트 수신확인.주소.이메일.이벤트 수신확인.추천인코드.
-            <br />
-            <style>
-                    table, tr{border:solid 1px rgb(51, 212, 30);}
-            </style>
-            <table>
+            <hr />
+
+            
+            <form>
                 <tbody>
                     <style>
                         #form1{
@@ -37,77 +36,158 @@
                         }
                     </style>
 
-                     <tr>
+                    <h3>*회원가입*</h3>
+
+                    <tr>
                         <td><strong>이름(실명): </em></strong></td>
                         <td><input id="form1" type="text" value="" /></td>
+                    </tr>
+                    
+                    <br />
+                    <br />
+
                     <tr>
                         <td><strong>닉네임: </em></strong></td>
                         <td><input id="form2" type="text" placeholder="신중한 결정" value="" /></td>
+                        <td><input type="button" oneclick="alert('중복확인완료')" value="중복확인" /></td>
                     </tr>
+
+                    <br />
+                    <br />
+
                     <tr>
                         <td><strong>아이디: </em></strong></td>
                         <td><input id="form3" type="text" placeholder="아이디를 입력하거라" value="" /></td>
+                        <td><input type="button" oneclick="alert('중복확인완료')" value="중복확인" /></td>
                     </tr>
+
+                    <br />
+                    <br />
+
                     <tr>
                         <td><strong>비밀번호: </em></strong></td>
                         <td><input id="form3" type="password" placeholder="암호를 입력하거라" value="" /></td>
                     </tr>
+
+                    <br />
+                    <br />
+
                     <tr>
                         <td><strong>비밀번호 확인: </em></strong></td>
                         <td><input id="form3" type="password" placeholder="다시 입력하거라" value="" /></td>
                     </tr>
+
+                    <br />
+                    <br />
+
                     <tr>
                         <td><strong>주민등록번호: </em></strong></td>
-                        <td><input id="form2" type="text" value="" /></td> <td>-</td><td><input id="form2" type="text" value="" /></td>
+                        <td><input id="form2" type="text" value="" /></td> <td>-</td> <td><input id="form2" type="text" value="" /></td>
                     </tr>
+
+                    <br />
+                    <br />
+
                     <tr>
                         <td><strong>전화번호: </em></strong></td>
-                        <td><input id="form2" type="text" value="" /></td>
+                        <td><select>
+                            <option>010</option>
+                            <option>011</option>
+                            <option>012</option>
+                            <option>031</option>
+                            <option>032</option>
+                            <option>043</option>
+                            <option>070</option>
+                            <option>050</option>
+                            <option>055</option>
+                            <option>007</option>
+                            <option>000</option>
+                        </select></td>
+                        <td>-</td>
+                        <td><input id="form1" type="text" value="" /></td> <td>-</td> <td><input id="form1" type="text" value="" /></td>
                     </tr>
-                    <tr>
-                        <td><strong>E-mail: </em></strong></td>
-                        <td><input id="form2" type="text" value="" /></td>
-                    </tr>
-                    <tr>
-                        <td><strong>추천인코드: </em></strong></td>
-                        <td><input id="form2" type="text" value="" /></td>
-                    </tr>
-                </tbody>
-            </table>
 
-            <style>
-                #form1{
-                    width:50px;
-                }
-            </style>
-            <input type="radio" name="bt1" value="1" />
-            <input type="radio" name="bt1" value="2" />
-            <input type="radio" name="bt1" value="3" />
-            <input type="radio" name="bt2" value="1" />
-            <input type="radio" name="bt2" value="2" />
-            <input type="radio" name="bt2" value="3" />
+                    <br />
+                    <br />
 
-            <input type="checkbox" value="1" />
-            <input type="checkbox" value="2" />
-            <input type="checkbox" value="3" />
-        
-            <select>
-                <option>직접입력</option>
-                <option>naver.com</option>
-                <option>gmail.com</option>
-                <option>가글</option>
-            </select>
-        
-            <br />
-            <textarea cols="20" rows="3">
+                    <tr>
+                        <td><strong>*E-mail: </em></strong></td>
                         
-            </textarea>
-            <br />
-            <input type="button" value="버튼이름" />
-            <input type="button" oneclick="alert('테스트완료')" value="테스트 버튼" />
-        
-            <input type="submit" value="제출" />
-        </form>
+                        <td><input id="form2" type="text" value="" /></td>
+                        <td>@</td>
+                        <td><input id="form2" type="text" value="" /></td>
+                        <td><select>
+                            <option>직접입력</option>
+                            <option>gmail.com</option>
+                            <option>naver.com</option>
+                            <option>daum.net</option>
+                            <option>hanmail.net</option>
+                            <option>nate.com</option>
+                            <option>kaywon.co.kr</option>
+                            </select>
+                        </td>
+
+                    <br />
+
+                        <td>*SMS 혹은 E-mail로 뽀빠이크럽의 홍보 및 새로운 이벤트 소식 등을 받으시겠습니까?
+                        예: <input type="radio" name="bt1" value="1" />
+                        그럴까: <input type="radio" name="bt1" value="2" /></td>
+                        </td>
+                    </tr>
+
+                    <br />
+                    <br />
+
+                    <tr>
+                        <td>귀하는 아래 약관을 읽고 동의 후 가입바랍니다.
+                        동의: <input type="checkbox" value="1" />
+
+                        <br />
+                        
+                        <textarea cols="70" rows="5" placeholder="제 1조 1항. 뽀빠이크럽에 가입한 회원은 뿜빠이를 해야한다. 그렇지 않을 경우 회원들에게 중대한 피해를 끼치는 원인으로 선정되어 최소 벌금 10만원, 최대 100만원까지 이르는 금액을 크럽에 복지기금으로 납부해야하며 임원들의 고려에 따라 강제탈퇴까지 이루어질 수 있다.제 1조 2항. 뽀빠이크럽에 가입한 회원은 뿜빠이를 해야한다. 그렇지 않을 경우 회원들에게 중대한 피해를 끼치는 원인으로 선정되어 최소 벌금 10만원, 최대 100만원까지 이르는 금액을 크럽에 복지기금으로 납부해야하며 임원들의 고려에 따라 강제탈퇴까지 이루어질 수 있다.제 1조 3항. 뽀빠이크럽에 가입한 회원은 뿜빠이를 해야한다. 그렇지 않을 경우 회원들에게 중대한 피해를 끼치는 원인으로 선정되어 최소 벌금 10만원, 최대 100만원까지 이르는 금액을 크럽에 복지기금으로 납부해야하며 임원들의 고려에 따라 강제탈퇴까지 이루어질 수 있다. "></textarea></td>
+                    </tr>
+
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+
+                    <input type="submit" value="취소" />
+                    <input type="submit" value="가입" />
+
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+
+                    <script>
+                            var canvas = document.getElementById("myCanvas")
+                            /* canvas라는 변수를 만들어서 myCanvas를 담음 */
+                            var ctx = canvas.getContext("2d"); //2D canvas를 생성합니다.
+                            ctx.fillStyle = "#FF0000"; //색을 지정합니다.
+                            ctx.fillRect(25, 25, 100, 100); //채움 사각형
+                            ctx.clearRect(45, 45, 60, 60); //사각형태로 지우기
+                            ctx.strokeRect(50, 50, 50, 50); //윤곽 사각형
+                            ctx.fillStyle = "#000000";
+                            ctx.beginPath(); //선그리기 시작
+                            ctx.moveTo(65, 75); //펜 들어 움직이기
+                            ctx.lineTo(90, 95); //선 그으며 움직이기
+                            ctx.lineTo(90, 55);
+                            ctx.fill(); //내부 채우기
+                            ctx.beginPath();
+                            ctx.arc(225, 75, 50, 0, Math.PI * 2, true); // Outer circle 
+                            ctx.moveTo(260, 75);
+                            ctx.arc(225, 75, 35, 0, Math.PI, false);  // Mouth (clockwise)
+                            ctx.moveTo(215, 65);
+                            ctx.arc(210, 65, 5, 0, Math.PI * 2, true);  // Left eye
+                            ctx.moveTo(245, 65);
+                            ctx.arc(240, 65, 5, 0, Math.PI * 2, true);  // Right eye
+                            ctx.stroke();
+                        </script>
+
+                </tbody>
+             </form>
+            </div>
 
 
         </body>
