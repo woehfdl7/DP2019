@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="default.css" />
+        <!-- external 외부에서 css파일을 불러와서 사용하기 -->
+        <a href="index.html">HOME</a>
+
+        <style>
+            #embeded{
+                color: green;
+                font-size: 30px;
+            }
+            /* 전체 선택자 */
+            *{ }
+            /* 요소 선택자 */
+            b{ color: violet; }
+            div{ font-size:10px; }
+            /* css 주석 */
+        </style>
+    </head>
+
+    <body>
+        <div id="external">external 방식</div>
+        <div id="embeded">embeded 방식</div>
+        <div id="inline" style="color:yellow;">inline 방식</div>
+        내용
+        <b>볼드체</b>
+
+        <style>
+             /*클래스 선택자*/
+             .c_name{color: green;}
+             /*아이디 선택자*/
+             #i_name{color: chocolate;}
+             div{border:solid 1px goldenrod;}
+        </style>
+        <div class="c_name">클래스 선택자</div>
+        <div class="c_name">클래스 선택자</div>
+        <div id="i_name">아이디 선택자</div>
+
+        <style>
+            /* 가상요소 선택자*/
+            #name_a:before{ content:"시작"; }
+            #name_a:after{ content:"끝"; }
+            #name_a:first-letter{ font-size: 20px; }
+            #name_a:first-line{ color: chartreuse; }
+        </style>
+        <div id="name_a">아브라카다브라아브라카다브라면먹고싶다</div>
+
+        <style>
+            /*가상클래스 선택자*/
+            .li1:first-child{ color: red; }
+            .li1:last-child{ color: khaki; }
+            .li1:nth-child(2){ color: seagreen; }
+            /*:link기본, :visited방문후, :hover마우스올림, :active누름, :focus집중*/
+            a:link{ color: black; text-decoration: none; }
+            a:visited{ color: goldenrod; }
+            a:hover{color: aqua; font-size: 20px;}
+            a:active{color:darkred;}
+            a:focus{color:steelblue;}
+        </style>
+       
+        <ul><!-- parent 부모 -->
+            <li class="li1">리스트1</li> <!-- child 자식 -->
+            <li class="li1">리스트2</li>
+            <li class="li1">리스트3</li>
+            <li class="li1">리스트4</li>
+            <a class="anchor1" href="http://www.google.com" blank >구글링크</a>
+        </ul>
+
+        <style>
+            /*하위 선택자*/
+            div li{color: red;}
+            /*자식 선택자*/
+            div>ul>li{ text-decoration: underline; }
+            /*선택자 그룹화*/
+            div{color:indianred}
+            #i_1, #i_2, #i_3{color: navajowhite;}
+        </style>
+        <div>
+            <ul>
+                <li>리스트1</li>
+                <li>리스트2</li>
+                <li>리스트3</li>
+            </ul>
+        </div>
+        <div id="i_1">첫번째</div>
+        <div id="i_2">두번째</div>
+        <div id="i_3">세번째</div>
+
+        <style type="text/css">
+            .cascade {color:green;}
+            #specifi {color:blue;}
+        </style>
+        <div class="cascade"> 단계적으로 적용되는 스타일 </div>
+        <div class="cascade" id="specifi"> 단계적으로 적용되는 스타일 </div>
+        <div class="cascade" id="specifi" style="color:red;"> 단계적으로 적용되는 스타일 </div>
+    
+        <style>
+            #color_test{
+                color: blue;
+                color: #000; /* rgb , 0~f(16진수)*/
+                color: #ff058e; /* rrggbb , 0~f(16진수)*/
+                color: rgb(153, 50, 204); /*0~255*/
+                color: rgb(0,0,100%); /*0~100%*/
+            }
+        </style>
+        <div id="color_test">컬러 테스트</div>
+
+        <style>
+            #box_model,#inline_model{
+                border: solid 1px black; /* 경계선: 실선 1px두께 검은색; */
+                width: 200px; /*가로 길이*/
+                height: 200px; /*세로 길이*/
+                /*margin 바깥 여백*/
+                margin: 100px;
+                /*padding 안쪽 여백*/
+                padding: 100px;
+                position: relative; /*기본 static(정적인, 멈춘)*/
+                /* static 정적인, relative 관계형, absolute 절대적, fixed 고정형 */
+                /* 남발 금지 */
+                left: 10px;
+                top: 10px;
+            }
+        </style>
+        <div id="box_model">박스 모델</div>
+        <span id="inline_model">인라인 모델</span>
+    </body>
+</html>
