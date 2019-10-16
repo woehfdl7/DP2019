@@ -1,3 +1,6 @@
 #external{
-    color: red;
+            color: white;
+            font-size: 30px;
 }
+#a{ color:red; }
+#b{ color:rgb(30, 255, 0); }

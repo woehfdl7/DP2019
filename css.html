@@ -126,5 +126,101 @@
         </style>
         <div id="box_model">박스 모델</div>
         <span id="inline_model">인라인 모델</span>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <style>
+            #font_target{
+                font-family: "양재백두체B", YJ BACDOO, "배달의민족 기랑해랑",BMKIRANGHAERANG, sans-serif;
+                font-size: 200px;
+                font-weight: bold;
+                /* light bold bolder, 100 200300 400*/
+                font-style: italic;
+                /* normal, italic */
+                font-variant: small-caps;
+                /*작은 대문자로 표현 */
+            }
+        </style>
+        폰트 교체하기 font test
+        <div id="font_target">안전놀이터 100%보장 뽀빠이클럽%%#$!3</div>
+        <div id="font_target">cat animal mommy</div>
+
+        <style>
+            #text_target{
+                text-align: center; /* 좌우정렬 */
+                /* left right center */
+                width: 150px;
+
+                vertical-align: top; /* 상하정렬 */
+
+                text-decoration: underline;
+                /* underline line-through overline */
+            }
+        </style>
+
+        <style>
+            /*
+                baseline : 기준선에 정렬
+                top : 위쪽정렬
+                text-top : 위쪽정렬
+                middle : 중앙정렬
+                bottom : 하단정렬
+                text-bottom : 하단정렬
+            */
+            #table_target td{
+                width:150px;
+                height:150px;
+                border:solid 1px black;
+            }
+            #vartical_baseline{ vertical-align: baseline; }
+            #vartical_top{ vertical-align: top; }
+            #vartical_text_top{ vertical-align: text-top; }
+            #vartical_middle{ vertical-align: middle; }
+            #vertical_bottom{ vertical-align: bottom; }
+            #vertical_text_bottom{ vertical-align: text-bottom; }
+        </style>
+        <table id="table_target">
+            <tr>
+                <td id="vartical_baseline">top</td>
+                <td id="vartical_top">top</td>
+                <td id="vartical_text_top">text_top</td>
+                <td id="vartical_middle">middle</td>
+                <td id="vertical_bottom">bottom</td>
+                <td id="vertical_text_bottom">text_bottom</td>
+            </tr>
+        </table>
+        
+        <div id="text_target">글 정렬 방식</div>
+        
+        <style>
+            #line_target{
+                letter-spacing: 20px; /*글자 간격*/
+                line-height: 20px; /*줄 간격 */
+                text-indent: 20px; /*들여쓰기*/
+                text-transform: uppercase; /*대소문자 변경*/
+                /*UPPERCASE lowercase capitalize*/
+                white-space: pre; /*띄어쓰기, 공백 모두 포함*/
+            }
+        </style>
+        <div id = "line_target">
+            아브라아브라카다브라아브라카다브라면먹고싶다아브라카다브라아브라카다브라면먹고싶다
+            아브라아브라카다브라아브라카다브라면먹고싶다아브라카다브라아브라카다브라면먹고싶다
+            아브라아브라카다브라아브라카다브라면먹고싶다아브라카다브라아브라카다브라면먹고싶다
+            아브라아브라카다브라아브라카다브라면먹고싶다아브라카다브라아브라카다브라면먹고싶다
+        </div>
+
+        <style>
+           @import url('https://fonts.googleapis.com/css?family=Sunflower:300&display=swap');
+           #google_font{
+               font-family: 'Sunflower', sans-serif;
+           }
+        </style>
+        google font 구글폰트
+        <div id="google_font">google font 구글 폰트</div>
     </body>
 </html>
