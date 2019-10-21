@@ -10,12 +10,15 @@
         <meta name="descriptioin" content="불법 카지노 사이트 오마주한 것입니다" />
         <meta name="copyright" content="made by Timjang Baek" />
         <link rel="stylesheet" type="text/css" href="default.css" />
+        <style>
+			@import url(css/default.css);
+		</style>
 
     </head>
 
     <body>
 
-        <div style="text-align:center;">
+        <div align="center">
         <body background="./images/black.jpg", background-size: cover;></body>
         <a href="index.html">HOME</a>
         <br />
@@ -23,9 +26,6 @@
         <br />
         <h1 id="a">대한민국 최고의 카☆지★노 사이트</h1>
         <hr />
-        <style>
-            #a{ color:red; }
-        </style>
         <h2 id="b">배당 200% 최고 확률///스포츠카 경품 추첨 지금 바로 </h2>
         <a href="https://www.police.go.kr/main.html" target="_blank">GO</a>
         <br />
@@ -33,6 +33,7 @@
         <hr />
         <h2 id="b">인천 최고 핫한 @#@$!~ㅓ24347</h2>
         <img src="http://blogfiles.naver.net/20110831_103/truepartners_1314765625967VPp1K_JPEG/1.jpg" />
+        <img src="./images/rullet.png" weight="1000px";, height="500px" />
         <br />
         뽀빠이클럽 10당 5토큰 지금바로gogogo<br />
         <a href="http://panyroom.jr.naver.com/game/view.nhn?nid=1&gameid=burger" target="_blank">>접속바로가기</a>
@@ -51,17 +52,19 @@
 
         <style>
                 table, tr{border:solid 1px rgb(51, 212, 30);}
-                td {border:solid 1px rgb(255, 5, 222);}
+                tr {background-color:sandybrown;}
+                td {border:solid 1px rgb(255, 5, 222);
+                background-color: springgreen;}
         </style>
         <table summary="토큰 배당률 당 딸 수 있는 돈">
         <caption>[뽀빠이] 코인 최대70%확률이득 회원인증보장</caption>
-            <thead>
+            <thead align="center">
                 <tr>
-                    <th scope="col" colspan="4">☆★토큰 배당률 당 딸 수 있는 돈</th>
+                    <th colspan="5" rowspan="4">☆★토큰 배당률 당 딸 수 있는 돈 </th>
                 </tr>
             </thead>
-            <tbody>
-                 <tr>
+            <tbody align="center">
+                 <tr id="ga">
                     <td><strong>토큰</em></strong>
                     <td><strong>뽀빠이코인</strong></td>
                     <td><strong>당첨확률</strong></td>
@@ -112,6 +115,30 @@
                 </tr>
             </tbody>
         </table>
+        <script>
+                var canvas = document.getElementById("myCanvas")
+                /* canvas라는 변수를 만들어서 myCanvas를 담음 */
+                var ctx = canvas.getContext("2d"); //2D canvas를 생성합니다.
+                ctx.fillStyle = "#FF0000"; //색을 지정합니다.
+                ctx.fillRect(25, 25, 100, 100); //채움 사각형
+                ctx.clearRect(45, 45, 60, 60); //사각형태로 지우기
+                ctx.strokeRect(50, 50, 50, 50); //윤곽 사각형
+                ctx.fillStyle = "#000000";
+                ctx.beginPath(); //선그리기 시작
+                ctx.moveTo(65, 75); //펜 들어 움직이기
+                ctx.lineTo(90, 95); //선 그으며 움직이기
+                ctx.lineTo(90, 55);
+                ctx.fill(); //내부 채우기
+                ctx.beginPath();
+                ctx.arc(225, 75, 50, 0, Math.PI * 2, true); // Outer circle 
+                ctx.moveTo(260, 75);
+                ctx.arc(225, 75, 35, 0, Math.PI, false);  // Mouth (clockwise)
+                ctx.moveTo(215, 65);
+                ctx.arc(210, 65, 5, 0, Math.PI * 2, true);  // Left eye
+                ctx.moveTo(245, 65);
+                ctx.arc(240, 65, 5, 0, Math.PI * 2, true);  // Right eye
+                ctx.stroke();
+            </script>
 
     </body>
 </html>
