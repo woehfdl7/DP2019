@@ -1,8 +1,26 @@
     body{
             color: white;
-            font-family: "a포스터M", sans-serif;
+            font-family: "a시나브로L", sans-serif;
             font-style: italic;
+            font-size: 25px
     }
-#a{ color:red; }
-#b{ color:rgb(30, 255, 0); }
+#a{ 
+    color:rgb(252, 49, 49);
+    font-size: 47px;
+ }
+#b{ 
+    color:rgb(30, 255, 0);
+    font-size: 30px;
+ }
+
+ #c{ 
+    color: yellow;
+    font-size: 30px;
+ }
+
+ #d{ 
+    color: white;
+    font-size: 20px;
+ }
+
 #ga{ background-color:sandybrown; }
