@@ -18,56 +18,78 @@
 
     <body>
 
-        <div align="center">
-        <body background="./images/space.gif", background-size: cover, background-repeat: no-repeat;></body>
-    
-        <a href="index.html">HOME</a>
-        <br />
-        <br />
-        <br />
-        <a href="file:///C:/Users/ASUS/Documents/GitHub/DP2019/html_part1.html"><img src="./images/뻐2.gif" height="70px"; /></a>
-        <br />
-        <style>
-            #box_model1 {
-                border: solid 0px white;
-                width: 1000px;
-                height: 20px;
-                margin: 30px;
-                padding: 0px;
-                position: relative; 
-                left: 10px;
-                top: 10px;
-            }
-        </style>
-        <div id="box_model1">           
-            <div style="position: relative;">
-                <a href="file:///C:/Users/ASUS/Documents/GitHub/DP2019/html_part1.html"><img src="images/about.jpg" weight="700px" height="55px"></a>
-                <a href="file:///C:/Users/ASUS/Documents/GitHub/DP2019/casino_collection.html"><img src="images/casino.jpg" weight="700px" height="55px"></a>
-                <a href="file:///C:/Users/ASUS/Documents/GitHub/DP2019/howtouse.html"><img src="images/howtouse.jpg" weight="700px" height="55px"></a> 
-                <a href="file:///C:/Users/ASUS/Documents/GitHub/DP2019/realization.html"><img src="images/feeling.jpg" weight="700px" height="55px"></a> 
-                <a href="file:///C:/Users/ASUS/Documents/GitHub/DP2019/login.html"><img src="images/login.jpg" weight="700px" height="55px"></a>          
+            <div align="center">
+            <body background="./images/space.gif", background-size: cover, background-repeat: no-repeat;></body>
         
-        <style>
-            #box_model2{
-                border: solid 5px white;
-                background-color: blueviolet;
-                width: 850px;
-                height: 1600px;
-                margin: 10px;
-                padding: 40px;
-                position: relative; 
-                left: 10px;
-                top: 10px;
-            }
-        </style>
+            <a href="index.html">HOME</a>
+            <br />
+            <br />
+            <br />
+            <a href="file:///C:/Users/ASUS/Documents/GitHub/DP2019/html_part1.html"><img src="./images/뻐2.gif" height="70px"; /></a>
+    
+            <style>
+                #fix{
+                    position:fixed;
+                    left:150px;
+                    top:150px;
+                    }
+            </style>
+            <div id="fix">
+                <audio width="10px" height="5px" controls>
+                    <source src="./media/14. Monsters, Inc.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <br />
+    
+            <style>
+                #box_model1 {
+                    border: solid 0px white;
+                    width: 1000px;
+                    height: 20px;
+                    margin: 30px;
+                    padding: 0px;
+                    position: relative; 
+                    left: 10px;
+                    top: 10px;
+                }
+            </style>
+    
+            <div id="box_model1">           
+                    <a href="file:///C:/Users/ASUS/Documents/GitHub/DP2019/html_part1.html"><img src="images/about.jpg" weight="700px" height="55px"></a>
+                    <a href="file:///C:/Users/ASUS/Documents/GitHub/DP2019/casino_collection.html"><img src="images/casino.jpg" weight="700px" height="55px"></a>
+                    <a href="file:///C:/Users/ASUS/Documents/GitHub/DP2019/howtouse.html"><img src="images/howtouse.jpg" weight="700px" height="55px"></a> 
+                    <a href="file:///C:/Users/ASUS/Documents/GitHub/DP2019/login.html"><img src="images/login.jpg" weight="700px" height="55px"></a>
+                    <a href="file:///C:/Users/ASUS/Documents/GitHub/DP2019/realization.html"><img src="images/feeling.jpg" weight="700px" height="55px"></a>
+            </div>
+    
+            <br />
+    
+            <style>
+                #box_model2{
+                    border: solid 5px white;
+                    background-color: blueviolet;
+                    width: 850px;
+                    height: 1500px;
+                    margin: 10px;
+                    padding: 40px;
+                    position: relative; 
+                    left: 10px;
+                    top: 10px;
+                }
+            </style>
+            
         <div id="box_model2">
-        <p><h1 id="b" >※ 뽀빠이클럽 회원가입 ※</h1>
+        <h1 id="b">※ 뽀빠이클럽 회원가입 ※</h1>
+        <hr />
         </br>
         <img src="http://blogfiles.naver.net/20110831_103/truepartners_1314765625967VPp1K_JPEG/1.jpg" />
         </br>
-        <p>뽀빠이클럽에 오신 것을 환영합니다</p>
         <br />
-        <p>아래 절차에 따라 회원가입을 완료해주세요^^</p>
+        <span>뽀빠이클럽에 오신 것을 환영합니다</span>
+        <br />
+        <br />
+        <span>아래 절차에 따라 회원가입을 완료해주세요^^</span>
+        <br />
         <br />
                 <style>
                     #form1{
@@ -84,35 +106,34 @@
                     }
                 </style>
                 
-                <h3 id="c">※ 회원가입 ※</h3>           
-            <br />
-            <hr />  
+        <h3 id="c">※ 회원가입 ※</h3>
+        <hr />
                 <ul id="e">
-                    <li><strong>이름(실명): <input id="form1" type="text" value="" /></em></strong></li>
+                    <li><strong>이름(실명): <input id="form1" type="text" value="" /></strong></li>
                     <hr />
                     <li><strong>닉네임:
                                 <input id="form2" type="text" placeholder="신중한 결정" value="" />
                                 <input type="button" onclick="alert('사용가능한 닉네임이야')" value="중복확인" />
-                        </em></strong>
+                        </strong>
                     </li>
                     <hr />
                     <li><strong>아이디:
                                 <input id="form3" type="text" placeholder="아이디를 입력하거라" value="" />
                                 <input type="button" onclick="alert('사용가능한 아이디여')" value="중복확인" />
-                        </em></strong>
+                        </strong>
                     </li>
                     <hr />
                     <li><strong>비밀번호: 
                                 <input id="form3" type="password" placeholder="암호를 입력하거라" value="" />
-                        </em></strong>
+                        </strong>
                     </li>
                     <hr />
                     <li><strong>비밀번호 확인: <input id="form3" type="password" placeholder="다시 입력하거라" value="" />
-                        </em></strong>
+                        </strong>
                     </li>
                     <hr />
                     <li><strong>주민등록번호: <input id="form2" type="text" value="" /> -  <input id="form2" type="text" value="" />
-                        </em></strong>
+                        </strong>
                     </li>
                     <hr />
                     <li><strong>전화번호: 
@@ -131,10 +152,10 @@
                     </select>
                     -  
                     <input id="form1" type="text" value="" /> -  <input id="form1" type="text" value="" />
-                    </em></strong>
+                    </strong>
                     </li>
                     <hr />
-                    <li><strong>*E-mail:                      
+                    <li>*E-mail:                      
                         <input id="form2" type="text" value="" /> @ <input id="form2" type="text" value="" />
                         <select>
                              <option>직접입력</option>
@@ -151,16 +172,17 @@
                              <div id="f">*SMS 혹은 E-mail로 뽀빠이크럽의 홍보 및 새로운 이벤트 소식 등을 받으시겠습니까?
                              <br />
                              예: <input type="radio" name="bt1" value="1" />
-                             그럴까: <input type="radio" name="bt1" value="2" /></div>
-                        </em></strong>
+                             그럴까: <input type="radio" name="bt1" value="2" />
+                            </div>
                     </li>
                     <hr />                   
-                    <li>귀하는 아래 약관을 읽고 동의 후 가입바랍니다.  
+                    <li><strong>귀하는 아래 약관을 읽고 동의 후 가입바랍니다.  
                         <br />
                         <br />
                         <textarea cols="70" rows="5" placeholder="제 1조 1항. 뽀빠이크럽에 가입한 회원은 뿜빠이를 해야한다. 그렇지 않을 경우 회원들에게 중대한 피해를 끼치는 원인으로 선정되어 최소 벌금 10만원, 최대 100만원까지 이르는 금액을 크럽에 복지기금으로 납부해야하며 임원들의 고려에 따라 강제탈퇴까지 이루어질 수 있다.제 1조 2항. 뽀빠이크럽에 가입한 회원은 뿜빠이를 해야한다. 그렇지 않을 경우 회원들에게 중대한 피해를 끼치는 원인으로 선정되어 최소 벌금 10만원, 최대 100만원까지 이르는 금액을 크럽에 복지기금으로 납부해야하며 임원들의 고려에 따라 강제탈퇴까지 이루어질 수 있다.제 1조 3항. 뽀빠이크럽에 가입한 회원은 뿜빠이를 해야한다. 그렇지 않을 경우 회원들에게 중대한 피해를 끼치는 원인으로 선정되어 최소 벌금 10만원, 최대 100만원까지 이르는 금액을 크럽에 복지기금으로 납부해야하며 임원들의 고려에 따라 강제탈퇴까지 이루어질 수 있다. "></textarea>
-                        <div> 동의: <input type="checkbox" value="1" /></div>
-                    </em></strong>
+                        <br />
+                        <span> 동의: <input type="checkbox" value="1" /></span>
+                    </strong>
                     </li>
                         <br />
                         <br />
@@ -168,17 +190,20 @@
                         <a href="file:///C:/Users/ASUS/Documents/GitHub/DP2019/login.html"><input type="button" value="취소" /></a>
                         <input type="submit" onclick="alert('가입이 완료되었다')" value="가입" />
                 </ul>
-        </p></div>        
-        <br />
-
-        <div id="b">☆매주 1000만냥 정규이벤트★</div>
-        뽀빠이클럽 10당 5토큰 지금바로gogogo<br />
-        <a href="http://panyroom.jr.naver.com/game/view.nhn?nid=1&gameid=burger" target="_blank">>접속바로가기</a>
         </div>
+
+        <br />       
+        <span id="b">☆매주 1000만냥 정규이벤트★</span>
         <br />
-        <div id="d">도메인이 상시 변경될 수 있으니 참고 바랍니다.</div>
+        <span>뽀빠이클럽 10당 5토큰 지금바로gogogo</span>
         <br />
+        <a href="http://panyroom.jr.naver.com/game/view.nhn?nid=1&gameid=burger" target="_blank">>접속바로가기</a>
+        <br />
+        <br />
+        <span id="d">도메인이 상시 변경될 수 있으니 참고 바랍니다.</span>
+        <br />        
         <a href="file:///C:/Users/ASUS/Documents/GitHub/DP2019/html_part1.html"><img src = "./images/뻐1.gif" height="70px";></a>
 
+    </div>
     </body>
 </html>
