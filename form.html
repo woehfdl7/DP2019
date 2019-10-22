@@ -69,8 +69,6 @@
         <br />
         <p>아래 절차에 따라 회원가입을 완료해주세요^^</p>
         <br />
-        <form>
-            <tbody>
                 <style>
                     #form1{
                         width:50px;
@@ -81,63 +79,44 @@
                     #form3{
                         width:130px;
                     }
+                    thead{
+                        color:yellow;
+                    }
                 </style>
-
-                <h3 id="c">※ 회원가입 ※</h3>
-
-                <tr>
-                    <td><strong>이름(실명): </em></strong></td>
-                    <td><input id="form1" type="text" value="" /></td>
-                </tr>
-                    
-                <br />
-                <br />
-
-                <tr>
-                    <td><strong>닉네임: </em></strong></td>
-                    <td><input id="form2" type="text" placeholder="신중한 결정" value="" /></td>
-                    <td><input type="button" onclick="alert('사용가능한 닉네임이야')" value="중복확인" /></td>
-                </tr>
-
-                <br />
-                <br />
-
-                <tr>
-                    <td><strong>아이디: </em></strong></td>
-                    <td><input id="form3" type="text" placeholder="아이디를 입력하거라" value="" /></td>
-                    <td><input type="button" onclick="alert('사용가능한 아이디여')" value="중복확인" /></td>
-                </tr>
-
-                <br />
-                <br />
-
-                <tr>
-                    <td><strong>비밀번호: </em></strong></td>
-                    <td><input id="form3" type="password" placeholder="암호를 입력하거라" value="" /></td>
-                </tr>
-
-                <br />
-                <br />
-
-                <tr>
-                    <td><strong>비밀번호 확인: </em></strong></td>
-                    <td><input id="form3" type="password" placeholder="다시 입력하거라" value="" /></td>
-                </tr>
-
-                <br />
-                <br />
-
-                <tr>
-                    <td><strong>주민등록번호: </em></strong></td>
-                    <td><input id="form2" type="text" value="" /></td> <td>-</td> <td><input id="form2" type="text" value="" /></td>
-                </tr>
-
-                <br />
-                <br />
-
-                <tr>
-                    <td><strong>전화번호: </em></strong></td>
-                    <td><select>
+                
+                <h3 id="c">※ 회원가입 ※</h3>           
+            <br />
+            <hr />  
+                <ul id="e">
+                    <li><strong>이름(실명): <input id="form1" type="text" value="" /></em></strong></li>
+                    <hr />
+                    <li><strong>닉네임:
+                                <input id="form2" type="text" placeholder="신중한 결정" value="" />
+                                <input type="button" onclick="alert('사용가능한 닉네임이야')" value="중복확인" />
+                        </em></strong>
+                    </li>
+                    <hr />
+                    <li><strong>아이디:
+                                <input id="form3" type="text" placeholder="아이디를 입력하거라" value="" />
+                                <input type="button" onclick="alert('사용가능한 아이디여')" value="중복확인" />
+                        </em></strong>
+                    </li>
+                    <hr />
+                    <li><strong>비밀번호: 
+                                <input id="form3" type="password" placeholder="암호를 입력하거라" value="" />
+                        </em></strong>
+                    </li>
+                    <hr />
+                    <li><strong>비밀번호 확인: <input id="form3" type="password" placeholder="다시 입력하거라" value="" />
+                        </em></strong>
+                    </li>
+                    <hr />
+                    <li><strong>주민등록번호: <input id="form2" type="text" value="" /> -  <input id="form2" type="text" value="" />
+                        </em></strong>
+                    </li>
+                    <hr />
+                    <li><strong>전화번호: 
+                    <select>
                         <option>010</option>
                         <option>011</option>
                         <option>012</option>
@@ -149,69 +128,47 @@
                         <option>055</option>
                         <option>007</option>
                         <option>000</option>
-                    </select></td>
-                    <td>-</td>
-                    <td><input id="form1" type="text" value="" /></td> <td>-</td> <td><input id="form1" type="text" value="" /></td>
-                </tr>
-
-                <br />
-                <br />
-
-                <tr>
-                    <td><strong>*E-mail: </em></strong></td>
-                        
-                    <td><input id="form2" type="text" value="" /></td>
-                    <td>@</td>
-                    <td><input id="form2" type="text" value="" /></td>
-                    <td><select>
-                        <option>직접입력</option>
-                        <option>gmail.com</option>
-                        <option>naver.com</option>
-                        <option>daum.net</option>
-                        <option>hanmail.net</option>
-                        <option>nate.com</option>
-                        <option>kaywon.co.kr</option>
+                    </select>
+                    -  
+                    <input id="form1" type="text" value="" /> -  <input id="form1" type="text" value="" />
+                    </em></strong>
+                    </li>
+                    <hr />
+                    <li><strong>*E-mail:                      
+                        <input id="form2" type="text" value="" /> @ <input id="form2" type="text" value="" />
+                        <select>
+                             <option>직접입력</option>
+                             <option>gmail.com</option>
+                             <option>naver.com</option>
+                             <option>daum.net</option>
+                             <option>hanmail.net</option>
+                             <option>nate.com</option>
+                             <option>kaywon.co.kr</option>
+                             
                         </select>
-                    </td>
-
-                <br />
-
-                <td id="d">*SMS 혹은 E-mail로 뽀빠이크럽의 홍보 및 새로운 이벤트 소식 등을 받으시겠습니까?
-                예: <input type="radio" name="bt1" value="1" />
-                그럴까: <input type="radio" name="bt1" value="2" /></td>
-                </td>
-                </tr>
-
-                <br />
-                <br />
-
-                <tr>
-                    <td>귀하는 아래 약관을 읽고 동의 후 가입바랍니다.
-                    동의: <input type="checkbox" value="1" />
-
-                    <br />
-                        
-                    <textarea cols="70" rows="5" placeholder="제 1조 1항. 뽀빠이크럽에 가입한 회원은 뿜빠이를 해야한다. 그렇지 않을 경우 회원들에게 중대한 피해를 끼치는 원인으로 선정되어 최소 벌금 10만원, 최대 100만원까지 이르는 금액을 크럽에 복지기금으로 납부해야하며 임원들의 고려에 따라 강제탈퇴까지 이루어질 수 있다.제 1조 2항. 뽀빠이크럽에 가입한 회원은 뿜빠이를 해야한다. 그렇지 않을 경우 회원들에게 중대한 피해를 끼치는 원인으로 선정되어 최소 벌금 10만원, 최대 100만원까지 이르는 금액을 크럽에 복지기금으로 납부해야하며 임원들의 고려에 따라 강제탈퇴까지 이루어질 수 있다.제 1조 3항. 뽀빠이크럽에 가입한 회원은 뿜빠이를 해야한다. 그렇지 않을 경우 회원들에게 중대한 피해를 끼치는 원인으로 선정되어 최소 벌금 10만원, 최대 100만원까지 이르는 금액을 크럽에 복지기금으로 납부해야하며 임원들의 고려에 따라 강제탈퇴까지 이루어질 수 있다. "></textarea></td>
-                </tr>
-
-                <br />
-                <br />
-                <br />
-                <br />
-
-                <input type="submit" value="취소" />
-                <input type="submit" value="가입" />
-
-                <br />
-                <br />
-                <br />
-                <br />
-
-            </tbody>
-            </form>
-            <br />
-        </div>
-        </p>
+                        <br />
+                        <br />
+                             <div id="f">*SMS 혹은 E-mail로 뽀빠이크럽의 홍보 및 새로운 이벤트 소식 등을 받으시겠습니까?
+                             <br />
+                             예: <input type="radio" name="bt1" value="1" />
+                             그럴까: <input type="radio" name="bt1" value="2" /></div>
+                        </em></strong>
+                    </li>
+                    <hr />                   
+                    <li>귀하는 아래 약관을 읽고 동의 후 가입바랍니다.  
+                        <br />
+                        <br />
+                        <textarea cols="70" rows="5" placeholder="제 1조 1항. 뽀빠이크럽에 가입한 회원은 뿜빠이를 해야한다. 그렇지 않을 경우 회원들에게 중대한 피해를 끼치는 원인으로 선정되어 최소 벌금 10만원, 최대 100만원까지 이르는 금액을 크럽에 복지기금으로 납부해야하며 임원들의 고려에 따라 강제탈퇴까지 이루어질 수 있다.제 1조 2항. 뽀빠이크럽에 가입한 회원은 뿜빠이를 해야한다. 그렇지 않을 경우 회원들에게 중대한 피해를 끼치는 원인으로 선정되어 최소 벌금 10만원, 최대 100만원까지 이르는 금액을 크럽에 복지기금으로 납부해야하며 임원들의 고려에 따라 강제탈퇴까지 이루어질 수 있다.제 1조 3항. 뽀빠이크럽에 가입한 회원은 뿜빠이를 해야한다. 그렇지 않을 경우 회원들에게 중대한 피해를 끼치는 원인으로 선정되어 최소 벌금 10만원, 최대 100만원까지 이르는 금액을 크럽에 복지기금으로 납부해야하며 임원들의 고려에 따라 강제탈퇴까지 이루어질 수 있다. "></textarea>
+                        <div> 동의: <input type="checkbox" value="1" /></div>
+                    </em></strong>
+                    </li>
+                        <br />
+                        <br />
+                        <br />
+                        <a href="file:///C:/Users/ASUS/Documents/GitHub/DP2019/login.html"><input type="button" value="취소" /></a>
+                        <input type="submit" onclick="alert('가입이 완료되었다')" value="가입" />
+                </ul>
+        </p></div>        
         <br />
 
         <div id="b">☆매주 1000만냥 정규이벤트★</div>

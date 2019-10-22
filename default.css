@@ -23,4 +23,17 @@
     font-size: 20px;
  }
 
-#ga{ background-color:sandybrown; }
+ #e{ 
+   color: white;
+   font-family: "나눔스퀘어라운드 Regular", sans-serif;
+   font-size: 20px;
+   font-style: normal;
+}
+
+#f{ 
+   color: white;
+   font-family: "나눔스퀘어라운드 Regular", sans-serif;
+   font-size: 15px;
+   font-weight: lighter;
+   font-style: normal;
+}
