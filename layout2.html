@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>layout2</title>
+        <meta charset="utf-8" />
+        <style>
+            /* CSS 작성하는 곳 */
+            .clear{
+                clear: both; /* 지우다: 양쪽 ★가장중요함 */
+                height: 0px; /* 높이: 양쪽 */
+                overflow: hidden; /* 넘쳤을때: 숨김 */
+            }
+            header{
+                background-color: #02918c;
+                color: white;
+            }
+            header>h1{
+                margin: 2px;
+            }
+            header>h1>span:nth-child(1){
+                color: white;
+            }
+            header>h1>span:nth-child(2){
+                color: greenyellow;
+            }
+            header ul{
+                margin: 13px 0px;
+            }
+            header>nav li{
+                float: left;
+                list-style: none;
+                padding: 0px 10px;
+            }
+            .float_left{
+                float: left;
+            }
+            .float_right{
+                float: right;
+            }
+            #main_visual{
+                background-image: url("images/layout2_visual.jpg");
+                height: 800px;
+                background-size: auto 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                /* repeat, no-repeat, repeat-x, repeat-y */
+                background-color: black;
+                background-position: 50% 50%; /* 가로 세로 */             
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <h1 class="float_left">
+                    <!-- div span -->
+                    <span>MY</span><span>POLIO</span>
+                </h1>
+                <nav class="float_right">
+                    <ul>
+                        <li>HOME</li>
+                        <li>ABOUT ME</li>
+                        <li>SERVICE</li>
+                        <li>MY WORK</li>
+                        <li>CONTACT ME</li>
+                        <div class="clear"></div>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+            </header>
+            <div id="main_visual">
+                <div>모두 모두 뽀빠이 카지노로 컴 온</div>
+                <div>와버리지 와버리지</div>
+                <div>모두 모두 뽀빠이</div>
+            </div>
+            <section>content1</section>
+            <section>content2</section>
+        </div>
+    </body>
+</html>
