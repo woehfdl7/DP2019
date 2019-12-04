@@ -6,16 +6,131 @@
             <!-- utf-8, euc-kr -->
             <meta name="author" content="백재원" />
             <meta name="keywords" content="계원예대, 디미디, 콘텐츠프로그래밍" />
+            <style>
+                @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+                @import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+                .clear{
+                clear: both; /* 지우다: 양쪽 ★가장중요함 */
+                height: 0px; /* 높이: 양쪽 */
+                overflow: hidden; /* 넘쳤을때: 숨김 */
+                }
+                body{
+                    background-image: url("images/background2.png");
+                    background-size: cover;
+                    color: rgb(rgb(26, 23, 23), green, blue);
+                    font-family: 'Noto Sans KR', sans-serif;
+                    margin: 0px;
+                    min-width: 1100px; /* 최소넓이 */
+                    max-width: 1920px; /* 최대넓이 */
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .header2{
+                    background-image: url("images/Layout3_back.jpg");
+                    background-repeat: repeat;
+                    box-shadow: 0px 13px 13px 0px gray inset;
+                }
+                .header2 h1{
+                    margin: 0px 0px 0px 15px;
+                    font-size: 45px;
+                    font-family: 'Bebas Neue', cursive;
+                }
+                .header2 a{
+                    color: black;
+                    text-decoration: none;
+                }
+                .header2 ul{
+                    margin: 15px;
+                }
+                .header2 li{
+                    float: right;
+                    list-style: none;
+                    padding: 0px 20px;
+                    border-right: solid 2px gray;
+                }
+                .header2 li:nth-child(1){
+                    border: none;
+                }
+                .float_left_index{
+                    float: left;
+                }
+                .float_right_index{
+                    float: right;
+                }
+                .footer2{
+                    background-image: url("images/Layout3_back.jpg");
+                    padding: 15px;
+                    padding-bottom: 5px;
+                    height: 100px;
+                }
+                .footer2 ul{
+                    list-style: none;
+                    margin: 5px;
+                    padding: 0px;
+                }
+                .footer2 li{
+                    float: left;
+                    padding: 0px 20px;
+                    border-right: solid 2px gray;
+                }
+                .footer2 li:nth-child(4){
+                    border: none;
+                }
+                .footer2 li:nth-child(1){
+                    padding: 0px 20px 0px 0px;
+                }
+                .title2{
+                    background-color: rgba(rgb(255, 255, 255), green, blue, 0.9);
+                    font-family: 'Bebas Neue', cursive;
+                    text-align: center;
+                    letter-spacing: 10px;
+                    min-height: calc(100vh - 20px);
+                }
+                .title2 div:nth-child(1){
+                    font-size: 20px;
+                    padding-top: 300px;
+                }
+                .title2 div:nth-child(2){
+                    font-size: 120px;
+                }
+                .title2 div:nth-child(3){
+                    font-size: 20px;
+                    padding-bottom: 300px;
+                }
+            </style>
         </head>
-
         <body>
-            <h1>열려라 참깨</h1>
-            <hr />
-            <ul>
-                <li><a href="layout1.html">layout1</a></li>
-                <li><a href="layout2.html">layout2</a></li>
-                <li><a href="layout3.html">layout3</a></li>
-                <li><a href="final_test.html">final_test</a></li>
-            </ul>  
+            <header class="header2">
+                <h1 class="float_left_index"><a href="index.html">FINAL</a></h1>
+                <nav class="float_right_index">
+                    <ul>
+                        <li><a href="final_test.html">Thinking</a></li>
+                        <li><a href="layout3.html">Layout3</a></li>
+                        <li><a href="layout2.html">Layout2</a></li>
+                        <li><a href="layout1.html">Layout1</a></li>
+                        <div class="clear"></div>
+                    </ul>  
+                </nav>
+                <div class="clear"></div>
+            </header>
+            <div class="title2">
+                <div>Final_Test of DMD</div>
+                <div>FINAL TEST</div>
+                <div>Kaywon University of Art & Design</div>
+            </div>
+            <footer class="footer2">
+                <div class="float_left_index">
+                    <ul class="float_left_index">
+                        <li>Layout1</li>
+                        <li>Layout2</li>
+                        <li>Layout3</li>
+                        <li>Thinking</li>
+                        <div class="clear"></div>
+                    </ul>  
+                    <div class="clear"></div>
+                    <div>ⓒ 2019 Contents Programming All Right Reserved.</div>
+                    <div>if you want more If you want more information about FINAL, Visit Kaywon University of Art & Design right now.</div>
+                </div>
+            </footer>
         </body>
     </html>

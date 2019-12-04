@@ -4,6 +4,7 @@
         <title>layout1</title>
         <meta charset="utf-8" />
         <style>
+            @import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
             header,div,nav,footer,ul,li,h1,h2,h3{
                 /* border: solid 1px black; */ /* 경계선 긋기 */
                 /* margin: 10px; */ /* 서로간에 여유공간 만들기 */
@@ -41,21 +42,20 @@
             .float_right{
                 float: right;
             }
-            nav li{
+            .laynav1 ul li{
                 float:left; /* 둥둥 떠다니게 : 왼쪽기준 */
-                list-style:none; /* 목록-모습(동그라미): 없음 */
+                list-style: none; /* 목록-모습(동그라미): 없음 */
                 padding-left: 10px; /* 내부여백-왼쪽: 10px */
                 padding-right: 10px; /* 내부여백-오른쪽: 10px */
             }
-            nav>h2{
+            .laynav1 h2{
                 margin: 0px;
             }
-            nav>ul{
+            .laynav1 ul{
                 margin: 8px;
             }
-            nav{
+            .laynav1{
                 background-color: goldenrod;
-
                 padding: 10px 50px;
             }
             #content>div:nth-child(1){
@@ -136,10 +136,82 @@
             body{
                 margin: 0px;
             }
+
+            .header2{
+                background-image: url("images/Layout3_back.jpg");
+                background-repeat: repeat;
+                box-shadow: 0px 13px 13px 0px gray inset;
+                color: black;
+                padding: 0px;
+            }
+            .header2 h1{
+                margin: 0px 0px 0px 15px;
+                font-size: 45px;
+                font-family: 'Bebas Neue', cursive;
+                padding: 0px;
+            }
+            .header2 a{
+                color: black;
+                text-decoration: none;
+            }
+            .header2 ul{
+                margin: 15px;
+            }
+            .header2 li{
+                float: right;
+                list-style: none;
+                padding: 0px 20px;
+                border-right: solid 2px gray;
+            }
+            .header2 li:nth-child(1){
+                border: none;
+            }
+            .float_left_index{
+                float: left;
+            }
+            .float_right_index{
+                float: right;
+            }
+            .footer2{
+                background-image: url("images/Layout3_back.jpg");
+                padding: 15px;
+                padding-bottom: 5px;
+                height: 100px;
+                color: black;
+            }
+            .footer2 ul{
+                list-style: none;
+                margin: 5px;
+                padding: 0px;
+            }
+            .footer2 li{
+                float: left;
+                padding: 0px 20px;
+                border-right: solid 2px gray;
+            }
+            .footer2 li:nth-child(4){
+                border: none;
+            }
+            .footer2 li:nth-child(1){
+                padding: 0px 20px 0px 0px;
+            }
         </style>
     </head>
     <body>
         <div id="wrap">
+            <header class="header2">
+                <h1 class="float_left_index"><a href="index.html">FINAL</a></h1>
+                <nav class="float_right_index">
+                    <ul>
+                        <li><a href="final_test.html">Thinking</a></li>
+                        <li><a href="layout3.html">Layout3</a></li>
+                        <li><a href="layout2.html">Layout2</a></li>
+                        <li><a href="layout1.html">Layout1</a></li>
+                        <div class="clear"></div>
+                    </ul>  
+                </nav>
+                <div class="clear"></div>
+            </header>
             <header>
                 <h1 class="float_left">
                     <img src="./images/layout1_head_logo.jpg" />
@@ -157,7 +229,7 @@
                 </div>
                 <div class="clear"></div> <!-- float left 해제 -->
             </header>
-            <nav>
+            <nav class="laynav1">
                 <h2 class="float_left">See Our Works</h2>
                 <!-- 회사 페이지 내 부제목이기 때문에 h2를 씀 -->
                 <ul class="float_right">
@@ -324,6 +396,20 @@
                         <div class="clear"></div>
                     </ul>
                     <div class="clear"></div>
+            </footer>
+            <footer class="footer2">
+                <div class="float_left_index">
+                    <ul class="float_left_index">
+                        <li>Layout1</li>
+                        <li>Layout2</li>
+                        <li>Layout3</li>
+                        <li>Thinking</li>
+                        <div class="clear"></div>
+                    </ul>  
+                    <div class="clear"></div>
+                    <div>ⓒ 2019 Contents Programming All Right Reserved.</div>
+                    <div>if you want more If you want more information about FINAL, Visit Kaywon University of Art & Design right now.</div>
+                </div>
             </footer>
         </div>
     </body>

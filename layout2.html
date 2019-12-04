@@ -5,6 +5,7 @@
         <meta charset="utf-8" />
         <style>
             /* CSS 작성하는 곳 */
+            @import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
             .clear{
                 clear: both; /* 지우다: 양쪽 ★가장중요함 */
                 height: 0px; /* 높이: 양쪽 */
@@ -121,10 +122,81 @@
                 padding: 0px;
                 margin: 0px;
             }
+
+            .header2{
+                background-image: url("images/Layout3_back.jpg");
+                background-repeat: repeat;
+                box-shadow: 0px 13px 13px 0px gray inset;
+                color: black;
+                padding: 0px;
+            }
+            .header2 h1{
+                margin: 0px 0px 0px 15px;
+                font-size: 45px;
+                font-family: 'Bebas Neue', cursive;
+            }
+            .header2 ul{
+                margin: 15px;
+            }
+            .header2 a{
+                color: black;
+                text-decoration: none;
+            }
+            .header2 li{
+                float: right;
+                list-style: none;
+                padding: 0px 20px;
+                border-right: solid 2px gray;
+            }
+            .header2 li:nth-child(1){
+                border: none;
+            }
+            .float_left_index{
+                float: left;
+            }
+            .float_right_index{
+                float: right;
+            }
+            .footer2{
+                background-image: url("images/Layout3_back.jpg");
+                padding: 15px;
+                padding-bottom: 5px;
+                height: 100px;
+                color: black;
+            }
+            .footer2 ul{
+                list-style: none;
+                margin: 5px;
+                padding: 0px;
+            }
+            .footer2 li{
+                float: left;
+                padding: 0px 20px;
+                border-right: solid 2px gray;
+            }
+            .footer2 li:nth-child(4){
+                border: none;
+            }
+            .footer2 li:nth-child(1){
+                padding: 0px 20px 0px 0px;
+            }
         </style>
     </head>
     <body>
         <div id="wrap">
+            <header class="header2">
+                <h1 class="float_left_index"><a href="index.html">FINAL</a></h1>
+                <nav class="float_right_index">
+                    <ul>
+                        <li><a href="final_test.html">Thinking</a></li>
+                        <li><a href="layout3.html">Layout3</a></li>
+                        <li><a href="layout2.html">Layout2</a></li>
+                        <li><a href="layout1.html">Layout1</a></li>
+                        <div class="clear"></div>
+                    </ul>  
+                </nav>
+                <div class="clear"></div>
+            </header>
             <header>
                 <h1 class="float_left">
                     <!-- div span -->
@@ -219,6 +291,20 @@
                     <div class="clear"></div>
                 </ul>
             </section>
+            <footer class="footer2">
+                <div class="float_left_index">
+                    <ul class="float_left_index">
+                        <li>Layout1</li>
+                        <li>Layout2</li>
+                        <li>Layout3</li>
+                        <li>Thinking</li>
+                        <div class="clear"></div>
+                    </ul>  
+                    <div class="clear"></div>
+                    <div>ⓒ 2019 Contents Programming All Right Reserved.</div>
+                    <div>if you want more If you want more information about FINAL, Visit Kaywon University of Art & Design right now.</div>
+                </div>
+            </footer>
         </div>
     </body>
 </html>
